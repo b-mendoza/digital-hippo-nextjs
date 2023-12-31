@@ -6,10 +6,13 @@
   "scripts": {
     "build": "next build",
     "dev": "next dev",
-    "fix": "concurrently --kill-others-on-fail --prefix-colors \"auto\" \"npm:fix:*\"",
+    "fix": "concurrently --kill-others-on-fail --prefix-colors \"auto\" \"pnpm:fix:*\"",
+    "fix:eslint": "eslint --cache --cache-location ./node_modules/.cache/eslint --fix .",
     "fix:prettier": "prettier --ignore-unknown --cache --write .",
-    "lint": "concurrently --prefix-colors \"auto\" \"npm:lint:*\"",
+    "lint": "concurrently --prefix-colors \"auto\" \"pnpm:lint:*\"",
+    "lint:eslint": "eslint --cache --cache-location ./node_modules/.cache/eslint .",
     "lint:prettier": "prettier --ignore-unknown --cache --check .",
+    "lint:types": "tsc --pretty",
     "start": "next start"
   },
   "dependencies": {
