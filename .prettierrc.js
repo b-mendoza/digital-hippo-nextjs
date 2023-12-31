@@ -1,7 +1,7 @@
 // @ts-check
 
 /** @type {import("prettier").Config} */
-module.exports = {
+export default {
   singleQuote: true,
-  plugins: ["prettier-plugin-packagejson"],
+  plugins: ['prettier-plugin-packagejson'],
 };
