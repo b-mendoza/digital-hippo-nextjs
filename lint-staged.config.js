@@ -13,7 +13,7 @@ const buildEslintCommand = (filenames) =>
 const lintStagedConfig = {
   '*': 'prettier --ignore-unknown --write',
   '*.{js,ts,tsx}': [buildEslintCommand],
-  '*.ts?(x)': () => 'tsc -p ./tsconfig.json --force --noEmit',
+  '*.ts?(x)': () => 'tsc -p ./tsconfig.json --incremental false',
 };
 
 export default lintStagedConfig;
