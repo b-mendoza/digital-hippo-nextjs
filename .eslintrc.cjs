@@ -37,7 +37,7 @@ module.exports = {
     react: {
       version: 'detect',
     },
-    /* linkComponents: [{ name: 'Link', linkAttribute: 'to' }], */
+    linkComponents: [{ name: 'Link', linkAttribute: 'to' }],
   },
   rules: {
     '@typescript-eslint/consistent-type-definitions': [ERROR, 'type'],
@@ -49,7 +49,7 @@ module.exports = {
     'import/first': ERROR,
     'import/newline-after-import': ERROR,
     'import/no-duplicates': ERROR,
-    'jsx-a11y/anchor-has-content': [ERROR, { components: ['Link', 'NavLink'] }],
+    'jsx-a11y/anchor-has-content': [ERROR, { components: ['Link'] }],
     'react/jsx-no-leaked-render': [ERROR, { validStrategies: ['ternary'] }],
     'simple-import-sort/exports': ERROR,
     'simple-import-sort/imports': ERROR,
