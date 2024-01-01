@@ -37,7 +37,7 @@ module.exports = {
     react: {
       version: 'detect',
     },
-    linkComponents: [{ name: 'Link', linkAttribute: 'to' }],
+    linkComponents: [{ name: 'Link', linkAttribute: 'href' }],
   },
   rules: {
     '@typescript-eslint/consistent-type-definitions': [ERROR, 'type'],
